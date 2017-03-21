@@ -7,6 +7,9 @@ p {
 
 header {
   background: #eaf2f4; }
+  header h1 {
+    margin: 0;
+    padding: 0; }
   header #header_in {
     padding-top: 10px;
     padding-bottom: 4px; }
@@ -31,12 +34,6 @@ header {
     list-style: none;
     margin: 0;
     padding: 0; }
-  header a {
-    display: block;
-    padding: 10px 8px;
-    border-bottom: 1px solid #eee;
-    font-size: 14px;
-    text-decoration: none; }
   @media (min-width: 550px) {
     header .sp_navi {
       display: none; }
@@ -246,10 +243,6 @@ footer {
       footer .copy {
         margin-top: 30px; } }
 
-h1 {
-  margin: 0;
-  padding: 0; }
-
 #sub_cover {
   padding: 40px 0;
   background-image: url(../images/news/sub_cover.jpg);
@@ -260,15 +253,6 @@ h1 {
   @media (min-width: 550px) {
     #sub_cover {
       padding: 80px 0; } }
-  @media (min-width: 550px) {
-    #sub_cover h2 {
-      text-align: center;
-      color: white;
-      font-size: 32px;
-      font-size: 3.2rem;
-      font-weight: bold;
-      margin: 0;
-      letter-spacing: 0.2rem; } }
   #sub_cover h2 {
     text-align: center;
     color: white;
@@ -277,49 +261,67 @@ h1 {
     font-weight: bold;
     margin: 0;
     letter-spacing: 0.2rem; }
+    @media (min-width: 550px) {
+      #sub_cover h2 {
+        text-align: center;
+        color: white;
+        font-size: 32px;
+        font-size: 3.2rem;
+        font-weight: bold;
+        margin: 0;
+        letter-spacing: 0.2rem; } }
 
 #contents {
-  padding-top: 20px #main h2;
-    padding-top-color: #42b9d0;
-    padding-top-border-bottom: 3px solid #42b9d0;
-    padding-top-font-size: 15px;
-    padding-top-font-size: 1.5rem;
-    padding-top-font-weight: bold;
-    padding-top-padding-bottom: 15px; }
-  #contents #main .news_li {
-    font-size: 15px;
-    font-size: 1.5rem; }
-  #contents #main .news_li li {
-    list-style: none; }
-  #contents #main .news_li li span {
-    color: #42b9d0;
-    display: block;
-    font-weight: bold;
-    margin-bottom: 3px; }
-  #contents #sidebar {
-    padding-bottom: 20px; }
-  #contents #sidebar .pc_sidemenu h3 {
-    color: #42b9d0;
-    font-size: 14px;
-    font-size: 1.4rem;
-    letter-spacing: 0.2rem;
-    font-weight: bold;
-    background-color: #f3f9fb;
-    padding: 15px;
-    margin-bottom: 0px; }
-  #contents #sidebar .pc_sidemenu li {
-    list-style: none;
-    display: block;
-    border-bottom: 1px solid #e5e5e5;
-    background-repeat: no-repeat;
-    background-position: 8px center;
-    margin-bottom: 0px;
-    padding: 10px 10px 10px 20px;
-    background-image: url(../images/news/side_arrow.png);
-    background-size: 4px 8px; }
-  #contents #sidebar .pc_sidemenu li a {
-    color: #339fd1;
-    text-decoration: none; }
+  padding-top: 20px; }
+
+#main h2 {
+  color: #42b9d0;
+  border-bottom: 3px solid #42b9d0;
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 15px; }
+
+#main .news_li {
+  font-size: 15px;
+  font-size: 1.5rem; }
+
+#main .news_li li {
+  list-style: none; }
+
+#main .news_li li span {
+  color: #42b9d0;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 3px; }
+
+#contents #sidebar {
+  padding-bottom: 20px; }
+
+#sidebar .pc_sidemenu h3 {
+  color: #42b9d0;
+  font-size: 14px;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  background-color: #f3f9fb;
+  padding: 15px;
+  margin-bottom: 0px; }
+
+#sidebar .pc_sidemenu li {
+  list-style: none;
+  display: block;
+  border-bottom: 1px solid #e5e5e5;
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  margin-bottom: 0px;
+  padding: 10px 10px 10px 20px;
+  background-image: url(../images/news/side_arrow.png);
+  background-size: 4px 8px; }
+
+#sidebar .pc_sidemenu li a {
+  color: #339fd1;
+  text-decoration: none; }
 
 @media (min-width: 550px) {
   #contents {
@@ -342,5 +344,14 @@ h1 {
     display: inline-block;
     margin-bottom: 0;
     padding-right: 10px; } }
+#contents #main h2.company_title {
+  margin-bottom: 0px; }
+#contents #main th {
+  padding-right: 20px; }
+#contents #main th, #contents #main td {
+  padding: 20px 0;
+  color: #626262;
+  font-size: 14px;
+  font-size: 1.4rem; }
 
 /*# sourceMappingURL=sample.css.map */
